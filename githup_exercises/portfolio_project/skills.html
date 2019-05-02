@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="skills.css">
+    <title>Portfolio AR</title>
+</head>
+<body>
+    <!-- navbar -->
+
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+        </script>
+    </nav>
+    <!-- header -->
+
+    <header class="header2">
+        <a href="index.html">
+            <img class="logo3" src="images/logo.png" alt="portfolio logo">
+            <h1 class="logotext3">Angie's Portfolio</h1>
+        </a>
+    </header>
+
+    <!-- skills -->
+
+    <section class="cv">
+        <h2>Education and Professional Experience</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        <h3>My Skills</h3>
+        <p>HTML</p>
+        <div class="cont">
+            <div class="skills1 html1">90%</div>
+        </div>
+
+        <p>CSS</p>
+        <div class="cont">
+            <div class="skills1 css1">80%</div>
+        </div>
+
+        <p>JavaScript</p>
+        <div class="cont">
+            <div class="skills1 js1">65%</div>
+        </div>
+
+        <p>PHP</p>
+        <div class="cont">
+            <div class="skills1 php1">60%</div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <p class="logotext2">Angie's Portfolio</p>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img class="snsfooter" src="images/sns.png" alt="linkedin link">
+        </a>
+        <div class="footernav">
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="#skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.container .ball1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: purple;
+  border: 5px solid #3d3d3d;
+  animation: move-in-steps 8s infinite; }
+
+@keyframes rolling {
+  0% {
+    left: 0; }
+  100% {
+    left: 100%; } }
+
+.container .ball2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #0077ff;
+  border: 5px solid #3d3d3d; }
+
+.container .ball3 {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #360272;
+  border: 5px solid #3d3d3d; }

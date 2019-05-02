@@ -1,0 +1,94 @@
+$marginbody: 0;
+$padding: 0;
+$border: 0;
+$height: 10rem;
+$bgcolor: rgba(255, 255, 0, 0.39);
+$txtal: center;
+$bsz: border-box;
+$marginmain: 5rem;
+$marginbott: 2rem;
+$paddtop: 1rem;
+$fontco1: rgb(49, 1, 1);
+$fontfa: Arial, Helvetica, sans-serif;
+$fontfa2: 'Times New Roman', Times, serif;
+$fontsz1: 10rem;
+$fontco2: rgb(47, 79, 184);
+$fontsz2: 8rem;
+$fontfa3:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+$fontsz3: 3rem;
+$fontfa4: Georgia, 'Times New Roman', Times, serif;
+$fontco3: rgb(86, 70, 138);
+$fontfa5:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$fontsz4: 5rem;
+$fontco4: rgb(43, 124, 48);
+$fontsz5: 2rem;
+
+html, body {
+    margin: $marginbody;
+    border: $border;
+    padding: $padding;
+    box-sizing: $bsz;
+}
+
+header {
+    height: $height; 
+    background-color: $bgcolor;
+    text-align: $txtal;
+    padding-top: $paddtop;
+    font-family: $fontfa;
+}
+
+h1 {
+    font-family: $fontfa;
+}
+
+.main {
+    margin: $marginmain; 
+}
+
+.huge {
+    font-family: $fontfa2;
+    font-size: $height;
+    color: $fontco2;
+}
+
+
+.big {
+    font-family: $fontfa2;
+    font-size: $fontsz2;
+    color: $fontco2;
+}
+
+.medium {
+    font-family: $fontfa3;
+    font-size: $fontsz3;
+    color: $fontco3;
+}
+
+.middle {
+    font-family: $fontfa4;
+    font-size: $fontsz3;
+    color: $fontco3;
+}
+
+
+.small {
+    font-family: $fontfa5;
+    font-size: $fontsz5;
+    color: $fontco4;
+}
+
+.tiny {
+    font-family: $fontfa5;
+    font-size: $fontsz4;
+    color: $fontco4;
+    margin-bottom: $fontsz5;
+}
+
+footer {
+    height: $height;
+    background-color: $bgcolor;
+    text-align: $txtal;
+    font-family: $fontfa;
+    padding-top: $paddtop;
+}

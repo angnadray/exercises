@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 800px;
+    height: 800px;
+    
+}
+.wrapper {
+    display: grid;
+    grid: 3px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-areas: 
+    "u u u u "
+    "d d d d "
+    "t t t t "
+    "c c c c "
+}
+img {
+    display: block;
+    width: 100%;
+}
+.uno {
+    grid-area: u;
+    width: 200px;
+    height: 200px;
+    border: 1px dotted gray;
+}
+.dos {
+    grid-area: d;
+    grid-area: u;
+    width: 200px;
+    height: 200px;
+    border: 1px dotted gray;
+}
+.tres {
+    grid-area: t;
+    grid-area: u;
+    width: 200px;
+    height: 200px;
+    border: 1px dotted gray;
+}
+.cuatro {
+    grid-area: c;
+    grid-area: u;
+    width: 200px;
+    height: 200px;
+    border: 1px dotted gray;
+}
+

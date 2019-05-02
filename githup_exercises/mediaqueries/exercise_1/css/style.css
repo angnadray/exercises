@@ -1,0 +1,44 @@
+body {
+    height: 100vh;
+    border: 10px solid black;
+}
+
+main {
+    margin: 15px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+/* 0 - 375px */
+@media only screen and (max-width: 375px) and (min-width: 0px) {
+    body {
+        border-color: red;
+    }
+}
+/* 376px - 425px */
+@media only screen and (max-width: 425px) and (min-width: 376px) {
+    body {
+        border-color: blue;
+    }
+}
+/* 426px - 768px */
+@media only screen and (max-width: 768px) and (min-width: 426px) {
+    body {
+        border-color: green;
+    }
+}
+/* 769px - 1024px */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    body {
+        border-color: yellow;
+    }
+}
+/* 1025px - 1440px */
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+    body {
+        border-color: hotpink;
+    }
+}

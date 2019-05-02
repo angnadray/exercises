@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+.c0 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 600px) {
+
+    .c0 {
+        border: 2px solid red;
+        width: 100%;
+    }
+    
+    .c1 {
+        background-color: purple;
+        width: 100%;
+    }
+    
+    .c2 {
+        background-color: blueviolet;
+        width: 100%;
+    }
+    
+    .c3 {
+        background-color: blue;
+        width: 100%;
+    }
+    
+    .c4 {
+        background-color: green;
+        width: 100%;
+    }
+    
+    .c5 {
+        background-color: yellow;
+        width: 100%;
+    }
+    
+    .c6 {
+        background-color: darkorange;
+        width: 100%;
+    }
+    
+    .c7 {
+        background-color: red;
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1440px) {
+    
+    .c0 {
+        border: 2px solid red;
+        width: 100%;
+    }
+    
+    .c1 {
+        background-color: purple;
+        width: 100%;
+    }
+    
+    .c2 {
+        background-color: blueviolet;
+        width: 100%;
+    }
+    
+    .c3 {
+        background-color: blue;
+        width: 33.33%;
+    }
+    
+    .c4 {
+        background-color: green;
+        width: 33.33%;
+    }
+    
+    .c5 {
+        background-color: yellow;
+        width: 33.33%;
+    }
+    
+    .c6 {
+        background-color: darkorange;
+        width: 100%;
+    }
+    
+    .c7 {
+        background-color: red;
+        width: 100%;
+    }
+}
+
+

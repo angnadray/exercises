@@ -1,0 +1,36 @@
+@mixin balls {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+@mixin border-bgcolor($background-color) {
+    background-color: $background-color;
+    border: 5px solid rgb(61, 61, 61);
+}
+@mixin animation {
+    animation: move-in-steps 8s infinite;
+    @keyframes rolling {
+        
+        0% {
+            left: 0;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+}
+.container {
+    .ball1 {
+        @include balls;
+        @include border-bgcolor(purple);
+        @include animation;
+    }
+    .ball2 {
+        @include balls;
+        @include border-bgcolor(rgb(0, 119, 255));
+    }
+    .ball3 {
+        @include balls;
+        @include border-bgcolor(rgb(54, 2, 114));
+    }
+}

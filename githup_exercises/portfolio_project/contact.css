@@ -1,0 +1,80 @@
+.header2 {
+    background-image: url(images/matrix2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0 0 0;
+    text-align: center;
+    height: 400px;
+    width: 100%;
+
+}
+.logo3 {
+    width: 5em;  
+}
+
+.logotext3 {
+    font-family: 'Satisfy', cursive;
+    display: inline;
+    font-size: 2em;
+    font-weight: lighter;
+    color: rgb(255, 255, 255);
+}
+.contact {
+    padding: 20px;
+    background-color: rgb(224, 255, 225);
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #0f4d24;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #1e682e;
+    font-weight: bold;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+  }
+          
+  .contain {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    padding: 3em;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

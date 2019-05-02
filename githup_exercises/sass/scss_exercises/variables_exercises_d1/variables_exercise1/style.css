@@ -1,0 +1,56 @@
+html, body {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header {
+  height: 10rem;
+  background-color: rgba(255, 255, 0, 0.39);
+  text-align: center;
+  padding-top: 1rem;
+  font-family: Arial, Helvetica, sans-serif; }
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif; }
+
+.main {
+  margin: 5rem; }
+
+.huge {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10rem;
+  color: #2f4fb8; }
+
+.big {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 8rem;
+  color: #2f4fb8; }
+
+.medium {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+  font-size: 3rem;
+  color: #56468a; }
+
+.middle {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 3rem;
+  color: #56468a; }
+
+.small {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  color: #2b7c30; }
+
+.tiny {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 5rem;
+  color: #2b7c30;
+  margin-bottom: 2rem; }
+
+footer {
+  height: 10rem;
+  background-color: rgba(255, 255, 0, 0.39);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1rem; }

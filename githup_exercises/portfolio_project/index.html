@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio AR</title>
+</head>
+<body>
+    <!-- navbar -->
+
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="skills.html">Skills</a>
+        <a href="contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+
+        </script>
+    </nav>
+    <!-- header -->
+
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="images/logo.png" alt="portfolio logo">
+            <h1 class="logotext">Angie's Portfolio</h1>
+        </a>
+        <p class="slogan">Future Junior Full Stack Developer.</p>
+        <p class="slogan2">Front-End and Back-End Development.</p>
+    </header>
+
+    <!-- about me -->
+
+    <div class="container text-center">
+        <h2>A Little About Me</h2>
+        <div class="col-sm">
+            <img class="picture" src="images/cat2.png" alt="photo of me" id="pic">
+            <br><br>
+            <p>Lorem ipsum dolor sit amet, quo ad legere iuvaret, pri solum tamquam ne, 
+            vim in aeterno similique. Sonet zril aliquando no vix, at mea hinc blandit percipitur. 
+            Mel persequeris referrentur cu, ne iusto legendos dissentias sea, 
+            te aperiri suavitate pri. Ius enim volumus principes et, scripta nusquam sententiae 
+            ex eum. Dico aliquando cum in. Mel ut quaeque placerat rationibus. Legimus impedit 
+            adolescens mei ex, ei graecis similique contentiones eum.
+            </p>
+            <p>Mel persequeris referrentur cu, ne iusto legendos dissentias sea, 
+            te aperiri suavitate pri. Ius enim volumus principes et, scripta nusquam sententiae 
+            ex eum. Dico aliquando cum in. Mel ut quaeque placerat rationibus. Legimus impedit 
+            adolescens mei ex, ei graecis similique contentiones eum.</p>
+        </div>
+    </div>
+
+    <!-- empty parallax section -->
+
+    <section class="ps1"></section>
+
+    <!-- portfolio -->
+
+    <section class="portfolio">
+        <div class="photos">
+            <h2 class="heading">Portfolio</h2>
+            <div class="gallery">       
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/code2.jpg" alt="">
+                </div>       
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/mobile.jpg" alt="">
+                </div>        
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/plans.jpg" alt="">
+                </div>       
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/code.jpg" alt="">
+                </div>       
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/monitor.jpg" alt="">
+                </div>      
+                <div class="gallery-item">
+                    <img class="gallery-image" src="images/startup.jpg" alt="">
+                </div>        
+            </div>
+        </div>
+        <div class="cta">
+            <button class="button"><a class="alink" href="portfolio.html">click here to see more about my work</a></button>
+        </div>
+    </section>
+
+    <!-- empty parallax section -->
+
+    <section class="ps2"></section>
+
+    <!-- skills -->
+
+    <div class="container position-relative pt-0 pb-0 skillcontainer">
+        <h2>My skills</h2>
+        <div class="row text-center position-absolute animationbox">
+            <div class="col-sm">
+                <h3>HTML</h3>
+                <img class="skills" src="images/html.png" alt="html image">
+                <br><br>
+                <p>Lorem con ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="col-sm">
+                <h3>CSS</h3>
+                <img class="skills2" src="images/css.png" alt="html image">
+                <br><br>
+                <p>Loremein ipsum amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="col-sm">
+                <h3>JavaScript</h3>
+                <img class="skills" src="images/js.png" alt="html image">
+                <br><br>
+                <p>Lorem nomo dolor sit amet adipisicing elit.</p>
+            </div>
+            <div class="col-sm">
+                <h3>PHP</h3>
+                <img class="skills2" src="images/php.png" alt="html image">
+                <br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <footer class="footer">
+        <p class="logotext2">Angie's Portfolio</p>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img class="snsfooter" src="images/sns.png" alt="linkedin link">
+        </a>
+        <div class="footernav">
+            <a href="#index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+</body>
+</html>
