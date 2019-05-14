@@ -1,5 +1,65 @@
 // Arrow Functions Exercises 
 
+et multiply = (a, b) => {
+  let result = a * b;
+  return result; 
+}    
+console.log(multiply(4,7));
+
+/* #### 2. Double The Odds
+Given any array of numbers e.g. [3, 5, 67, 12, 34, 4, 9, 30],
+filter the odd numbers into a new array and multiply each 
+odd number by 2.  */
+console.log("----Task_2----");
+
+let array = (arr) => {
+   let NUM = []
+   
+   for(let i =0; i<arr.length; i++){
+       if(arr[i] % 2 !== 0){
+           NUM.push(arr[i] * 2)
+       }   
+   }
+   console.log(NUM);
+}
+array([3, 5, 67, 12, 34, 4, 9, 30])
+
+
+/* #### 3. Loopyloop
+Given an array of numbers, loop through the array and 
+subract 10 from each element using an arrow function. 
+Return the new array.  */
+
+
+console.log("----Task_3----");
+
+let loopedNumber = (arrayTask3) => {
+   let emptyBraceTask3 = [];
+   for(let c=0; c<arrayTask3.length; c++) {
+       emptyBraceTask3.push(arrayTask3[c] - 10);
+       }
+       return emptyBraceTask3;
+   }
+
+console.log(loopedNumber([100,200,300,400]));
+
+/* #### 4. Cars
+Create an object named car. Create key pair values which 
+include the model of the car, the manufacturer, year etc. 
+Create an arrow function which prints the key pair values of 
+the object. */ 
+console.log("----Task_4----");
+
+let car = (model, manufacturer, year) =>   
+console.log(`This car is a ${model} ${manufacturer} and it is from ${year}`);
+
+car("Ford", "Fiesta","2009");
+/* #### 5. Filter
+Given this array: [3,62,234,7,23,74,23,76,92], use the array 
+filter method and an arrow function to create an array of the 
+numbers greater than `70`. Store the result into a variable. */ 
+
+
 /* 1. Multiply
 Multiply two numbers and return the result using an arrow function. */ 
 
