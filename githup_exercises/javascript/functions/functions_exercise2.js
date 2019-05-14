@@ -7,12 +7,10 @@ Examples:
 * reverse(34532) -> expected output: 23543 */
 
 function reverse(num) {
-    let arrRev = [], arrNum = num.toString().split('');
-
-        for (let i in arrNum) {
-        arrRev.unshift(arrNum[i]);
-        }
-    console.log(arrRev.join(""));
+    let arrRev = num.toString().split('');
+    let arrRev2 = arrRev.reverse().join("");
+    let arrRev3 = Number(arrRev2);
+    console.log(arrRev3);
 }
 reverse(34532); //output 23543
 
@@ -24,11 +22,15 @@ Examples:
 
 * Note: Assume numbers, symbols and punctuation are not included in the string. */  
 
-function alphaOrder(string) {
+/* function alphaOrder(string) {
     let array = string.toLowerCase().match(/\w/g).sort().join("");
     console.log(array);
-    }
-    
+    } */
+
+function alphaOrder(str) {
+    let wordOrder = str.split('').sort().join('');
+    console.log(wordOrder);
+}
 alphaOrder("Hi! My name's Lola, I'm a shy person!!"); // aaaeehhiillmmmnnooprsssyy
 
 /* 3. The Greater Numbers
@@ -39,7 +41,7 @@ Examples:
 * findGreatest([10, 20, 30], 12) -> expected output: 20, 30
 * findGreatest([0, 10, 3], 4) -> expected output: 10 */
 
-function myMax(a) {
+/* function myMax(a) {
     let m = n = a.length;
 
     for (let i = 0; i != n; ++i) {
@@ -51,7 +53,7 @@ function myMax(a) {
 }
 myMax([10, 20, 30]); // 30
 
-//____________________________ only to find out the greatest number in an array
+//____________________________ only to find out the greatest number in an array */
 
 function greatNum(arr, nr){
     let res = [];
@@ -111,14 +113,14 @@ Examples:
 * longestWord("this is a web development course") ->  expected output: "development" */
 
 function longestWord(stringVal) {
-    let str = stringVal.split(" ");
+    let str1 = stringVal.split(" ");
     let longest = [];
     let word = [];
 
-    for (let i = 0; i < str.length; i++) {
-        if (longest < str[i].length) {
-            longest = str[i].length;
-            word = str[i];
+    for (let i = 0; i < str1.length; i++) {
+        if (longest < str1[i].length) {
+            longest = str1[i].length;
+            word = str1[i];
         }
     }
     console.log(word);
@@ -198,3 +200,4 @@ Create a function that counts the number of occurrences of each letter in a stri
 
 Examples: 
 * countLetters("tree") -> expected output: t: 1, r: 1, e: 2 */
+
