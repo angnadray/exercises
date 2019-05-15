@@ -4,18 +4,17 @@
 Create a function to to display the current date and time in the following format: 
 Today is Wednesday. The current time is 1PM : 34 : 59. */ 
 
-/* function currDate() {
-    let dateFormat = new Date();
-} 
-console.log(); */
+function date() {
+    let date = new Date();
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let getDayName = days[date.getDay()];
+    let months = ["January", "February", "March", "April", "May", "June", "July", "August", "september", "October", "November", "December"];
+    let getMonthName = months[date.getMonth()];
 
-let date = new Date();
-
-var datestring = d.getDate()  + "-" + (d.getMonth()+1) + "-" + d.getFullYear() + " " +
-d.getHours() + ":" + d.getMinutes();
-
-// 16-5-2015 9:50
-
+    let dateResult = `Today is ${getDayName}, ${getMonthName} ${date.getDate()} of ${date.getFullYear()}. The current time is ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+    console.log(dateResult);
+}
+date();
 
 /* 2. Date Formats
 Create a function to display the current date in the following formats dd-mm-yyyy, dd/mm/yyyy. */
