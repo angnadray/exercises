@@ -39,40 +39,52 @@ switch (grade) {
     note = `Improvements are needed`;
 }
 
-console.log(note);  // No value found
+console.log(note);  // Great Job!
 
 /* 3. What month is it? 
 Create a function using the new Date().getMonth() method and switch case in order to return 
 the month of the year. Return "It's the month of May!" */
 
-let month = "";
+let month = "It's the month of ";
 
-// The getDay() method returns the weekday of a date as a number (0-6):
-
-switch (new Date().getDay()) {
+switch (new Date().getMonth()) {
     case 0:
-      month = "Sunday";
-      break;
+        month += "January";
+        break;
     case 1:
-      month = "Monday";
-      break;
+        month += "February";
+        break;
     case 2:
-      month = "Tuesday";
-      break;
+        month += "March";
+        break;
     case 3:
-            month = "Wednesday";
-      break;
+        month += "April";
+        break;
     case 4:
-            month = "Thursday";
-      break;
+        month += "May";
+        break;
     case 5:
-            month = "Friday";
-      break;
+        month += "June";
+        break;
     case 6:
-            month = "Saturday";
+        month += "July";
+        break;
+    case 7:
+        month += "August";
+        break;
+    case 8:
+        month += "September";
+        break;
+    case 9:
+        month += "October";
+        break;
+    case 10:
+        month += "November";
+        break;
+    case 11:
+        month += "December";
 }
-
-console.log(month);
+console.log(month); // It's the month of May
 
 /* 4. Fruits
 Create a function that takes a string in its parameters. Console log a different statement 
