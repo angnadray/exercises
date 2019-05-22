@@ -1,12 +1,18 @@
 // Arrow Functions Exercises 
 
-et multiply = (a, b) => {
+
+//Alisio's answers
+
+/* 1. Multiply
+Multiply two numbers and return the result using an arrow function. */
+
+let multiply = (a, b) => {
   let result = a * b;
   return result; 
 }    
 console.log(multiply(4,7));
 
-/* #### 2. Double The Odds
+/* 2. Double The Odds
 Given any array of numbers e.g. [3, 5, 67, 12, 34, 4, 9, 30],
 filter the odd numbers into a new array and multiply each 
 odd number by 2.  */
@@ -25,7 +31,7 @@ let array = (arr) => {
 array([3, 5, 67, 12, 34, 4, 9, 30])
 
 
-/* #### 3. Loopyloop
+/* 3. Loopyloop
 Given an array of numbers, loop through the array and 
 subract 10 from each element using an arrow function. 
 Return the new array.  */
@@ -43,7 +49,7 @@ let loopedNumber = (arrayTask3) => {
 
 console.log(loopedNumber([100,200,300,400]));
 
-/* #### 4. Cars
+/* 4. Cars
 Create an object named car. Create key pair values which 
 include the model of the car, the manufacturer, year etc. 
 Create an arrow function which prints the key pair values of 
@@ -54,20 +60,28 @@ let car = (model, manufacturer, year) =>
 console.log(`This car is a ${model} ${manufacturer} and it is from ${year}`);
 
 car("Ford", "Fiesta","2009");
-/* #### 5. Filter
+
+/* 5. Filter
 Given this array: [3,62,234,7,23,74,23,76,92], use the array 
 filter method and an arrow function to create an array of the 
 numbers greater than `70`. Store the result into a variable. */ 
 
+//___________________________________________________________
+
+// My answers
 
 /* 1. Multiply
 Multiply two numbers and return the result using an arrow function. */ 
 
-
+let result = (a, b) => a * b;
+console.log(result(5, 9));  // 45
 
 /* 2. Double The Odds
 Given any array of numbers e.g. [3, 5, 67, 12, 34, 4, 9, 30], filter the odd numbers 
 into a new array and multiply each odd number by 2. */
+
+let firstArr = [3, 5, 67, 12, 34, 4, 9, 30];
+let secondArr = [];
 
 
 
