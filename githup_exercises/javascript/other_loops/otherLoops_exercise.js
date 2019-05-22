@@ -56,22 +56,47 @@ integer and should minus 1 from each even integer.
 * evenOddTransform([3, 5, 2, 4] -> expected output: [4, 6, 1, 3]
 * evenOddTransform([6, 9, 10, 20] -> expected output: [5, 10, 9, 19] */
 
-let arrNum = [2,3,4,5,6];
-let s = 0;
-let output = [];
+/* let arrNumber = [3, 5, 2, 4];
+let newArray = [];
+let n = 0;
+while (n < arrNumber.length) {
 
-
-while (arrNum[s]) {
-    output += arrNum[s];
-    s++;
-    if(arrNum[s] % 2 === 0) {
-        arrNum[s] += arrNum[s] - 1;
+    if (arrNumber[n] % 2 === 0) {
+      let minus = arrNumber[n]-1;
+      newArray.push(minus)
     }
-    else {
-        arrNum[s] += arrNum[s] + 1;
-    }  
+    else{
+        let plus = arrNumber[n]+1;
+      newArray.push(plus)
+    }
+n++
 }
-console.log(output);
+console.log(newArray); */
+
+let arrNumber = [3, 5, 2, 4];
+
+// arrow function
+let evenOdd = arrNumber => {
+
+let newArray = [];
+let n = 0;
+
+while (n < arrNumber.length) {
+
+    if (arrNumber[n] % 2 === 0) {
+      let minus = arrNumber[n]-1;
+      newArray.push(minus)
+    }
+    else{
+        let plus = arrNumber[n]+1;
+      newArray.push(plus)
+    }
+n++
+}
+console.log(newArray);
+}
+
+evenOdd(arrNumber); // [ 4, 6, 1, 3 ]
 
 // Do While: Use do while loops to complete the tasks below.
 
