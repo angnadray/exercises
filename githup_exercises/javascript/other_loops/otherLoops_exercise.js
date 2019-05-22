@@ -40,7 +40,7 @@ let c = 0;
 let stringNames = "";
 
 while (cityName[c]) {
-    stringNames += cityName[c] + ", ";
+    stringNames += `${cityName[c]},`;
     c++;
 }
 console.log(stringNames);
@@ -61,19 +61,17 @@ let s = 0;
 let output = [];
 
 
-while (arrNum[c]) {
+while (arrNum[s]) {
     output += arrNum[s];
     s++;
     if(arrNum[s] % 2 === 0) {
-        arrNum[s] + 1;
+        arrNum[s] += arrNum[s] - 1;
     }
     else {
-        arrNum[s] - 1;
+        arrNum[s] += arrNum[s] + 1;
     }  
 }
 console.log(output);
-
-
 
 // Do While: Use do while loops to complete the tasks below.
 
