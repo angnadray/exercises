@@ -76,7 +76,7 @@ console.log(newArray); */
 let arrNumber = [3, 5, 2, 4];
 
 // arrow function
-let evenOdd = arrNumber => {
+let evenOdd = (arrNumber) => {
 
 let newArray = [];
 let n = 0;
@@ -104,7 +104,30 @@ evenOdd(arrNumber); // [ 4, 6, 1, 3 ]
 Create a function that takes an array of at least 3 numbers as an argument and returns the 
 sum of the numbers. Use a do while loop. */ 
 
+/* let numArr = [4, 5, 6, 2];
+let s = 0;
+let totSum = 0;
+    
+while (s < numArr.length) {
+    totSum += numArr[s];
+    s++;   
+}
+console.log(totSum); // 17 */
 
+let numArr = [4, 5, 6, 2];
+
+let sumTot = (numArr) => {
+
+let s = 0;
+let totSum = 0;
+    
+while (s < numArr.length) {
+    totSum += numArr[s];
+    s++;   
+}
+console.log(totSum); // 17
+}
+sumTot(numArr);
 
 /* 2. Add it up!
 Create a function that adds numbers from 1-20 together using a while loop. */ 
@@ -119,7 +142,6 @@ elements are strictly increasing, decreasing or neither.
 * check([3, 2, 1]) ➞ "decreasing"
 * check([1, 2, 1]) ➞ "neither"
 * check([1, 1, 2]) ➞ "neither" */
-
 
 // forEach(): Use the forEach() method to complete the tasks below
 
