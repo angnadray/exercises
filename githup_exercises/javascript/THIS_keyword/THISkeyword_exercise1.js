@@ -88,7 +88,7 @@ Already read Harry Potter and the Chamber of Secrets by J.K. Rowling
 Already read The Odyssey by Homer
 You still need to read To Kill a Mockingbird by Harper Lee */
 
-let library = [ 
+/* let library = [ 
     {
         author: 'J.K. Rowling',
         title: 'Harry Potter and the Chamber of Secrets',
@@ -115,8 +115,47 @@ for (let i = 0; i < library.length; i++)
     {
      console.log(`You still need to read ${book}`);
     }
-   }
+   } */
     /* Already read Harry Potter and the Chamber of Secrets by J.K. Rowling
     Already read The Odyssey by Homer
     You still need to read To Kill a Mockingbird by Harper Lee
      */
+
+    const library = [ 
+        {
+            author: 'J.K. Rowling',
+            title: 'Harry Potter and the Chamber of Secrets',
+            readingStatus: true
+        },
+        {
+            author: 'Homer',
+            title: 'The Odyssey',
+            readingStatus: true
+        },
+        {
+            author: 'Harper Lee',
+            title:  'To Kill a Mockingbird', 
+            readingStatus: false
+        }];
+           function convert(){
+             let newArr =[];
+                for (let j =0; j< this.length ; j++){
+                    if (this[j].readingStatus === true){
+                       newArr.push(`Already read ${this[j].title} by ${this[j].author}`)
+                       ;
+                       
+                        
+                    } else {
+                      newArr.push(`you still need ${this[j].title} by ${this[j].author}`);
+                    }
+                    
+                }
+                return newArr.join(' - ')
+                  
+              }
+    
+              console.log(convert.call(library));
+/* 
+Already read Harry Potter and the Chamber of Secrets by J.K. Rowling - 
+Already read The Odyssey by Homer - you still need To Kill a Mockingbird by Harper Lee
+*/
