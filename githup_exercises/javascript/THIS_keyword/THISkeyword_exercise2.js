@@ -130,7 +130,17 @@ Use bind() to include the object in your function.
 
 Expected output: Hi Sandra, welcome to Berlin, Germany! */
 
+let person1 = { name: 'Sandra' };
+let place = {
+    city: "Berlin",
+    country: "Germany",
+}
 
+function greeting() {
+    console.log(`${this.name}`);
+}
+
+greeting.call(person1); //
 
 /* 6. Look at the code snippets below, what is the output?
 Code Snippet 1
