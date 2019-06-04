@@ -15,9 +15,13 @@ person.sayJob(); */
 let person = {
     name: "John",
     job: 'teacher',
-    sayJob: function() {return `This person is a ${person.job}`;}
+    sayJob: function() {return `This person is a ${this.job}`;}
   };
-person.sayJob();
+
+  function job() {
+      console.log(this.sayJob());
+  }
+job.call(person);  // This person is a teacher
 
 /* 2. Person
 Look over the below code. Then try to add yourself as a new person object, similar to how 
@@ -31,7 +35,25 @@ function person(first, last, age, eye) {
 var myFather = new person("John", "Doe", 50, "blue");
 var myMother = new person("Sally", "Rally", 48, "green"); */
 
+function family(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+  }
+  let myFather = new family("John", "Doe", 50, "blue");
+  let myMother = new family("Sally", "Rally", 48, "green");
+  let mySelf = new family("Lila", "Doe", 20, "blue-green");
 
+console.log(mySelf);
+
+/* 
+family {
+  firstName: 'Lila',
+  lastName: 'Doe',
+  age: 20,
+  eyeColor: 'blue-green' }
+ */
 
 /* 3. Cars
 Create a constructor function called cars (shown below). Fill in the blank parts in the 
@@ -69,7 +91,27 @@ let name2 = person.details;
 console.log(name1()); // ?
 console.log(name2.print()) // ? */
 
+let fullName = "Jay Global";
+let subject = {
+    name: 'Jay Person',
+    details: {
+        name: 'Jay Details',
+        print: function() {
+            return this.name;
+        }
+    },
+    print: function() {
+        return this.name;
+    }
+};
+console.log(subject.details.print());  // Jay Details
+console.log(subject.print());          // Jay Person
 
+let name1 = subject.print;
+let name2 = subject.details;
+
+console.log(name1()); // undefined
+console.log(name2.print()) // Jay Details
 
 /* 5. call() an object
 Given an object e.g.
@@ -80,7 +122,7 @@ call() to complete the task.
 
 Expected output: Hi Sandra, welcome to Berlin, Germany!
 
-Use apply() to incude the object in your function.
+Use apply() to include the object in your function.
 
 Expected output: Hi Sandra, welcome to Berlin, Germany!
 
