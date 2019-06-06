@@ -179,3 +179,34 @@ pikachu.attack();
 pikachu.attack();
 pikachu.attack();
 pikachu.showStatus();
+
+/* 
+Pokemon {
+  name: 'poko',
+  health: 3,
+  magic: 200,
+  skills: [],
+  totalmagicsused: 0,
+  totalmagicsusedbyattack: 200,
+  counter: 0 }
+Pokemon {
+  name: 'poko',
+  health: 3,
+  magic: 200,
+  skills:
+   [ AttackSkill { attack: 'lightning', damage: 40, magic: 20 },
+     AttackSkill { attack: 'bombing', damage: 40, magic: 50 },
+     AttackSkill { attack: 'fire', damage: 40, magic: 100 } ],
+  totalmagicsused: 0,
+  totalmagicsusedbyattack: 200,
+  counter: 0 }
+AttackSkill { attack: 'fire', damage: 40, magic: 100 }
+100
+AttackSkill { attack: 'lightning', damage: 40, magic: 20 }
+80
+you dont have enough magics to use your skills
+AttackSkill { attack: 'bombing', damage: 40, magic: 50 }
+30
+poko has 3 lives and 30 magics left
+poko lost
+*/
