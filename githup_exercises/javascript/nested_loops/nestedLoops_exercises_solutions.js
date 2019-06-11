@@ -1,4 +1,4 @@
-/1. Write a program to compute the sum and product of an array of integers.
+/* /1. Write a program to compute the sum and product of an array of integers. */
 console.log(`---------------1 ---------------`);
 var array = [10, 20, 30, 40, 50];
 var sum = 0;
