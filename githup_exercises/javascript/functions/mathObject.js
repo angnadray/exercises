@@ -37,7 +37,7 @@ function lowNum (arr1) {
     let minNum = arr1.reduce((a, b) => Math.min(a, b))
     console.log(minNum);
  };
- lowNum([14, 58, 20, 77, -5, 66, 4]);
+ lowNum([14, 58, 20, 77, -5, 66, 4]); // -5
 
 /* 3. The Power Of
 Create a function that takes two numbers as arguments. Return the value of the first 
@@ -46,7 +46,7 @@ number to the power of the second number. */
 function powOf(num1, num2) {
     return Math.pow(num1, num2);
 }
-console.log(powOf(2, 3));
+console.log(powOf(2, 3)); // 8
 
 /* 4. Highest Number
 Create a function that takes an array as an argument and returns the highest number 
@@ -69,7 +69,7 @@ function mathMax() {
     }
 }
 
-console.log(mathMax()); // -3
+console.log(mathMax()); // 6577
 
 //__________________________________________________
 
@@ -77,7 +77,7 @@ function maxNum (arr2) {
     let maxNum = arr2.reduce((a, b) => Math.max(a, b))
     console.log(maxNum);
  };
- maxNum([14, 58, 20, 77, -5, 66, 4]);
+ maxNum([14, 58, 20, 77, -5, 66, 4]); // 77
 
 /* 5. Pi
 Create a function that given a number n, returns PI to n decimal places.
