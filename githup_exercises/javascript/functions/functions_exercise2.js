@@ -201,3 +201,17 @@ Create a function that counts the number of occurrences of each letter in a stri
 Examples: 
 * countLetters("tree") -> expected output: t: 1, r: 1, e: 2 */
 
+let word= 'tree';
+let splitted = word.split('');
+
+let str = splitted.reduce(function(total,letter){
+    if(letter in total){
+        total[letter]++;
+    }else{
+        total[letter] = 1;
+
+    }
+    return total;
+
+},{})
+console.log(str);
