@@ -77,3 +77,9 @@ Examples:
 * {} ➞ true
 * {a: 1} ➞ false */
 
+let emptyObject = {};
+if(Object.keys(emptyObject).length == 0) {
+    console.log("True, it is an empty value")
+} else {
+    console.log("False, it is not empty value");
+};//quiz 4, used to verify weather the object is empty or not
